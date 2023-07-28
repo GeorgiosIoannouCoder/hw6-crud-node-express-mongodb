@@ -15,7 +15,7 @@
 
     <div class="row">
       <div class="container">
-        <h2>Add quote</h2>
+        <h2 class="header">Add quote</h2>
         <form action="/quotes" method="POST">
           <input type="text" placeholder="name" name="name" />
           <input type="text" placeholder="quote" name="quote" />
@@ -24,13 +24,13 @@
       </div>
 
       <div class="container">
-        <h2>Darth Vader invades!</h2>
+        <h2 class="header">Darth Vader invades!</h2>
         <p>Replace first Yoda's quote with a quote written by Darth Vader</p>
         <button id="update-button">Replace Yoda's quote</button>
       </div>
 
       <div class="container">
-        <h2>Remove Darth Vader!</h2>
+        <h2 class="header">Remove Darth Vader!</h2>
         <p>
           Delete one Darth Vader's quote. Does nothing if there are no more
           Darth Vader's quote
@@ -40,7 +40,7 @@
     </div>
 
     <div class="container-quotes">
-      <h2 class="quotes-header">Quotes</h2>
+      <h2 class="header">Quotes</h2>
       <ul class="quotes">
         <!-- Loop through quotes -->
         <% for(var i = 0; i < quotes.length; i++) {%>
