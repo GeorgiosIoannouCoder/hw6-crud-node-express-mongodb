@@ -2,7 +2,7 @@
 
 <p align="center">
    <img src="public/favicon.png"
-      alt="Yoda Star Wars character" width="100" height="100"/>
+      alt="Yoda Star Wars character" width="300" height="300"/>
 </p>
 
 ## Description
