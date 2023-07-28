@@ -25,6 +25,7 @@ update.addEventListener("click", (_) => {
     });
 });
 
+// Delete button event listener.
 deleteButton.addEventListener("click", (_) => {
   fetch("/quotes", {
     method: "delete",
