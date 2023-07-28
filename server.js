@@ -14,11 +14,14 @@ const app = express();
 const MONGO_URI =
   "mongodb+srv://GeorgeIoannou:Georgios33mongodb3@cluster0.j9rriyy.mongodb.net/?retryWrites=true&w=majority";
 
+// Port.
+const PORT = process.env.PORT || 3000;
+
 // Connect to MongoDB database.
 MongoClient.connect(MONGO_URI, { useUnifiedTopology: true })
   .then((client) => {
     // Successful console message indicating successful connection to the MognoDB database.
-    console.log("Connected to Database\n");
+    console.log("Connected to Database");
 
     // Changing the database.
     const db = client.db("star-wars-quotes");
@@ -106,9 +109,9 @@ MongoClient.connect(MONGO_URI, { useUnifiedTopology: true })
     });
 
     // Create a server that browsers can connect to.
-    app.listen(3000, function () {
-      console.log("listening on port:3000");
-      console.log("http://localhost:3000/");
+    app.listen(PORT, () => {
+      console.log("Express server running on port " + PORT + "!");
+      //console.log("http://localhost:3000/");
     });
   })
 
